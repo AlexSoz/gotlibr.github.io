@@ -21,6 +21,9 @@
 </head>
 
 <body>
+    <?php
+    echo "Привет мир!";
+    ?>
     <div class="header container-fluid" id="header">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="upper-header">
             <div class="info-buttons col-lg-12 col-xs-12">
