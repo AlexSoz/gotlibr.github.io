@@ -1,0 +1,259 @@
+//adding icon fonts, icon sprite sheets
+.sprite {
+    background-image: url('@{img-folder}spritesheet.png');
+    background-repeat: no-repeat;
+    display: block;
+    &.sprite-phone-circle {
+        .stitches-sprite(-5px,
+        -5px,
+        30px,
+        30px);
+    }
+    &.sprite-envelope {
+        .stitches-sprite(-45px,
+        -5px,
+        32px,
+        20px);
+    }
+}
+
+.sprite-tovar {
+    background-image: url('@{img-folder}spritesheet.png');
+    background-repeat: no-repeat;
+    display: block;
+    &.sprite-Blanki {
+        .stitches-sprite(-5px, -5px, 107px, 133px);
+    }
+
+   
+
+    &.sprite-Bloknoti {
+        .stitches-sprite(-239px, -5px, 105px, 134px);
+    }
+
+    
+
+    &.sprite-Broshuri {
+        .stitches-sprite(-5px, -149px, 99px, 143px);
+    }
+
+    
+
+    &.sprite-Bukleti {
+        .stitches-sprite(-223px, -149px, 157px, 125px);
+    }
+
+    
+
+    &.sprite-Flaeri {
+        .stitches-sprite(-223px, -284px, 99px, 140px);
+    }
+
+    
+
+    &.sprite-Konverti {
+        .stitches-sprite(-5px, -434px, 173px, 131px);
+    }
+
+    
+
+    &.sprite-Listovki {
+        .stitches-sprite(-469px, -5px, 79px, 118px);
+    }
+
+    
+
+    &.sprite-Plakati {
+        .stitches-sprite(-441px, -412px, 106px, 132px);
+    }
+
+    
+
+    &.sprite-Vizitki {
+        .stitches-sprite(-371px, -554px, 167px, 107px);
+    }
+
+    
+}
+
+.sprite {
+    background-image: url('@{img-folder}spritesheet2.png');
+    background-repeat: no-repeat;
+    display: block;
+    &.sprite-noun_185636_cc-1 {
+        .stitches-sprite(-4px,
+        -4px,
+        58px,
+        77px);
+    }
+    &.sprite-noun_248434_cc-1 {
+        .stitches-sprite(-70px,
+        -4px,
+        55px,
+        75px);
+    }
+    &.sprite-noun_357446_cc-1 {
+        .stitches-sprite(-70px,
+        -87px,
+        97px,
+        57px);
+    }
+    &.sprite-noun_39451_cc-1 {
+        .stitches-sprite(-133px,
+        -4px,
+        64px,
+        70px);
+    }
+    &.sprite-noun_70890_cc-1 {
+        .stitches-sprite(-175px,
+        -82px,
+        64px,
+        59px);
+    }
+    &.sprite-noun_729731_cc-1 {
+        .stitches-sprite(-175px,
+        -149px,
+        68px,
+        68px);
+    }
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@keyframes pulse{
+0%{transform: rotate(40deg);}
+4%{transform: rotate(45deg);}
+8%{transform: rotate(50deg);}
+12%{transform: rotate(55deg);}
+16%{transform: rotate(60deg);}
+20%{transform: rotate(65deg);}
+24%{transform: rotate(70deg);}
+28%{transform: rotate(65deg);}
+32%{transform: rotate(60deg);}
+36%{transform: rotate(55deg);}
+40%{transform: rotate(50deg);}
+44%{transform: rotate(45deg);}
+48%{transform: rotate(40deg);}
+52%{transform: rotate(35deg);}
+56%{transform: rotate(30deg);}
+60%{transform: rotate(25deg);}
+64%{transform: rotate(20deg);}
+68%{transform: rotate(15deg);}
+72%{transform: rotate(10deg);}
+76%{transform: rotate(15deg);}
+80%{transform: rotate(20deg);}
+84%{transform: rotate(25deg);}
+88%{transform: rotate(30deg);}
+92%{transform: rotate(35deg);}
+100%{transform: rotate(40deg);}}
+
+@keyframes pulse2{
+0%{transform: scale(1,1);}
+100%{transform: scale(1.5,1.5);}
+}
+@keyframes pulse3{
+0%{transform: scale(1,1);}
+100%{transform: scale(0.8,0.8);}
+}
+.icon-phone-wrapper{
+  animation-name: pulse2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  width: 47px;
+    height: 47px;
+
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    border-style: solid;
+    border-color: rgb(0, 53, 128);
+    border-width: 1px;
+}
+.icon-phone{
+  background-color: rgb(0, 53, 128); 
+     padding: 11px 10px 10px 13px; 
+      border-radius: 50%;
+      width: 45px;
+    height: 45px;
+    animation-name: pulse3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.icon-phone:before {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    display: inline-block;
+    content: "\e901";
+    font-size: 24px !important;
+    transform: rotate(40deg);
+    color: #ffffff;
+}
+
+.icon-circle-right:before {
+    content: "\e902";
+    font-size: 2em;
+    color: #e5e5e5;
+    position: relative;
+     cursor: pointer;
+    display: inline-block;
+}
+.icon-circle-right:hover:before{
+    color:#ffffff;
+    
+}
+.icon-circle-left:before {
+    content: "\e903";
+    font-size: 2em;
+    color: #e5e5e5;
+    position: relative;
+   cursor: pointer;
+    display: inline-block;
+}
+.icon-circle-left:hover:before{
+    color:#ffffff;
+    
+}
+.icon-facebook:before {
+    content: "\ea90";
+
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+
+}
+.icon-vk{
+   display: inline-block;
+   transform: rotate(-45deg);
+}
+.icon-facebook{display: inline-block;
+   transform: rotate(-45deg);}
+.icon-instagram{display: inline-block;
+   transform: rotate(-45deg);}
+.icon-vk:before {
+    content: "\e900";
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+   
+}
+.footer>.info-button-footer{
+  margin-top: 50px;
+}

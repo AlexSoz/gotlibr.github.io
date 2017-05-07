@@ -1,0 +1,187 @@
+        //forms, buttons, dialogs etc.
+        .info-buttons {
+            padding-top: 15px;
+            padding-left: 55px;
+        }
+        
+        .info-button {
+            color: rgba(0, 0, 0, 0.702);
+            margin-right: 60px;
+            text-align: center;
+        }
+        
+        .info-button:hover {
+            color: rgb(0, 172, 240);
+            text-decoration: none;
+        }
+        
+        .navigation {
+            position: relative;
+            background-color: rgb(0, 53, 128);
+            padding: 0px;
+            padding-left: 55px;
+            display: block;
+            margin-bottom: 0;
+            padding-right: 55px;
+            margin-top: 0;
+        }
+        
+        .navigation-fixed {
+            position: fixed;
+            background-color: #ffffff;
+            padding: 0px;
+            padding-left: 55px;
+            display: block;
+            margin-bottom: 0;
+            padding-right: 55px;
+            z-index: 3;
+            top: 0;
+            margin-top: 0;
+        }
+        
+        .nav-button {
+            padding-right: 0;
+            min-height: 51px;
+            position: relative;
+            padding-top: 14px;
+            text-align: left;
+            list-style: none;
+            padding-left: 0px;
+            display: inline-block;
+        }
+        .nav-button:nth-child(n+7){
+                display: none;
+            }
+        #mini-wrapper{
+            border-radius: none;
+            display: none;
+        }
+        .nav-button-second {
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            width: 80%;
+            list-style: none;
+            display: none;
+            z-index: 2;
+            top: 51px;
+            left: -6%;
+            padding-left: 6%;
+            text-align: left;
+        }
+        
+        #first>.nav-button-second {
+            width: 100%;
+            left: -25%;
+        }
+        
+        .nav-button-second::before {
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: -8px;
+            left: 45%;
+            display: none;
+            border-style: solid;
+            border-width: 0 10px 8.7px 10px;
+            border-color: transparent transparent #fffffa transparent;
+            line-height: 0px;
+            display: inline;
+        }
+        
+        .nav-button-second>li {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .nav-button-second>li>a {
+            color: rgba(1, 1, 1, 0.702);
+        }
+        
+        .nav-button-second>li>a:hover {
+            color: rgb(0, 172, 240);
+            text-decoration: none;
+        }
+        
+        .nav-button:hover {
+            cursor: pointer;
+        }
+        
+        .nav-button:hover .nav-button-second {
+            display: block;
+            cursor: pointer;
+        }
+        
+        .first:hover::after {
+            display: inline;
+        }
+        
+        .info-button-footer {
+            display: block;
+            margin-top: 30px;
+        }
+        
+        .info-button-footer:hover {
+            text-decoration: none;
+            color: rgb(0, 172, 240);
+        }
+        
+        .contact-wrapper:first-child>.info-button-footer:hover {
+            color: rgb(127, 139, 153);
+            cursor: initial;
+        }
+        
+        .info-title {
+            display: block;
+            margin-bottom: 30px;
+        }
+        
+        .social-icon {
+            padding: 1px;
+            color: rgb(127, 139, 153);
+        }
+        
+        .copiright {
+            text-align: left;
+            margin-bottom: 0;
+        }
+        
+        .developer {
+            text-align: center;
+            margin-bottom: 0;
+        }
+        
+        .designer {
+            text-align: right;
+            margin-bottom: 0;
+        }
+        /*good-page*/
+        
+        .path {
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .path>.info-button {
+            margin-right: 15px;
+        }
+        
+        .path-arrow {
+            margin-right: 15px;
+        }
+        
+        @media screen and (max-width:991px) and (min-width: 768px) {
+            /*For bootstrap small device*/
+            .nav-button {
+                text-align: center;
+            }
+            .nav-button-second {
+                margin-top: 8px;
+            }
+            .contact-wrapper {
+                margin-bottom: 30px;
+            }
+            .info-button-footer.col-sm-12 {
+                text-align: center;
+            }
+        }
