@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Title</title>
+    <!-- Import main styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!--[if lt IE 10]>
+<link rel="stylesheet" href="assets/css/ie.css">
+<![endif]-->
+</head>
+
+<body>
+    <div class="header container-fluid" id="header">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="upper-header">
+            <div class="info-buttons col-lg-12 col-xs-12">
+                <a href="#" class="info-button">Оплата</a>
+                <a href="#" class="info-button">Доставка</a>
+                <a href="#" class="info-button">Требование&nbspк&nbspмакетам</a></div>
+            <div class="logo-brand col-lg-4   col-md-12 col-sm-6 col-xs-12 col-sm-offset-3 col-lg-offset-0 col-md-offset-0">
+                <img src="assets/img/Logo.png" alt="Логотип Типография А4" class="logo">
+                <span class="brand logo     ">Типография&nbspA4</span>
+            </div>
+            <div class="contacts col-lg-7 col-lg-offset-1  col-md-12 col-sm-12 col-xs-12">
+                <span class="phone_number "><img class="contact-icon"
+                     src="assets/img/telefon.png">(098)423&nbsp23&nbsp21</span>
+                <span class="phone_number "><img class="contact-icon"
+                     src="assets/img/telefon.png">(075)423&nbsp23&nbsp21</span>
+                <span class="phone_number "><img class="contact-icon"
+                     src="assets/img/telefon.png">(095)423&nbsp23&nbsp21</span>
+                <span class="email "><img class="contact-icon"
+                     src="assets/img/envelope.png">example@example.com</span>
+            </div>
+        </div>
+        <ul class="navigation col-lg-12 col-md-12 col-sm-12 col-xs-12" id="navigation">
+           <li id="mini-wrapper" class="col-sm-12 col-xs-12">
+            <img src="assets/img/Logo.png" alt="Логотип Типография А4" class="mini-logo-hidden" id="mini-logo">
+            <span id="mini-brand" class="mini-brand  col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1">
+                      Типография&nbspA4  
+            </span>
+            
+            <div  onclick="openMenu()" id="hamburger" class="col-xs-1 col-sm-1"></div>
+            </li>
+            <li onclick="openSecondMenu(0)" class="col-lg-2 nav-button col-md-2 col-sm-12 col-xs-12  " id="first">Полиграфия
+                 <span class="arrow-left"></span>
+                <ul class="nav-button-second">
+                    <li><a href="#" class="href-second">Визитки </a></li>
+                    <li><a href="#" class="href-second">Листовки </a></li>
+                    <li><a href="#" class="href-second">Буклеты</a></li>
+                    <li><a href="#" class="href-second">Плакаты</a></li>
+                    <li><a href="#" class="href-second">Бирки</a></li>
+                    <li><a href="#" class="href-second">Брошюры</a></li>
+                    <li><a href="#" class="href-second">Наклейки</a></li>
+                    <li><a href="#" class="href-second">Блокноты</a></li>
+                    <li><a href="#" class="href-second">Флаера</a></li>
+                </ul>
+            <span class="arrow-right"></span>
+            </li>
+            
+            <li onclick="openSecondMenu(1)" class="col-lg-3 nav-button first col-md-3 col-sm-12 col-xs-12">Широкоформатная печать
+                <span class="arrow-left"></span>
+                <ul class="nav-button-second">
+                    <li><a href="#" class="href-second">Банер</a></li>
+                    <li><a href="#" class="href-second">Плакат</a></li>
+                    <li><a href="#" class="href-second">Пленка</a></li>
+                </ul>
+            <span class="arrow-right"></span>
+            </li>
+            <li onclick="openSecondMenu(2)" class="col-lg-3 nav-button first col-md-3 col-sm-12 col-xs-12">Сувенирная продукция
+                <!--Для позиционирования треугольников-->
+                <span class="arrow-left"></span>
+                <ul class="nav-button-second">
+                    <li><a href="#" class="href-second">Футболки </a></li>
+                    <li><a href="#" class="href-second">Чашки </a></li>
+                    <li><a href="#" class="href-second">Ручки</a></li>
+                    <li><a href="#" class="href-second">Карандаши</a></li>
+                    <li><a href="#" class="href-second">Пакеты полиэтиленовые</a></li>
+                    <li><a href="#" class="href-second">Блокноты</a></li>
+                    <li><a href="#" class="href-second">Флаги</a></li>
+                    <li><a href="#" class="href-second">Магниты</a></li>
+                    <li><a href="#" class="href-second">Фотокниги</a></li>
+                </ul>
+                <span class="arrow-right"></span>
+            </li>
+            <li class="col-lg-3 nav-button first col-md-3 col-sm-12 col-xs-12">Свадебная полиграфия
+            </li>
+            <li onClick='location.href="contacts.html"' class="col-lg-1  nav-button col-md-1 col-sm-12 col-xs-12">Контакты</li>
+            <li  class="col-lg-1  nav-button col-md-1 col-sm-12 col-xs-12">Оплата</li>
+            <li class="col-lg-1  nav-button col-md-1 col-sm-12 col-xs-12">Доставка</li>
+
+            <li  class="col-lg-1  nav-button col-md-1 col-sm-12 col-xs-12">Требования к макетам</li>
+        </ul>
+    </div>
+    <!--NAVIGATION-->
+    <div onClick='location.href="contacts.html"' class="icon-phone-wrapper">
+        <div class="icon-phone"></div>
+    </div>
+    <div class="container-fluid slider-container">
+        <div class="col-lg-12 slider col-md-12 col-sm-12 col-xs-12" id="slider">
+            <div onclick=nextSlide(-2) class="icon-circle icon-circle-left col-lg-1 col-md-1 col-sm-1 col-xs-1" id="icon"> </div>
+            <div id="slides" class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                <div class="slide showing">
+                    <img src="assets/img/2.png" class="col-lg-6 col-md-6 slider-image col-sm-6 col-xs-6" id="promo">
+                    <div class="col-lg-6 slider-text col-md-6 col-sm-6 col-xs-6"> СКИДКА&nbsp10%
+                        <br>каждый понедельник
+                        <br>на&nbspпечать еврофлаеров<span class="slider-text-additional">Скидки не суммируются*</span></div>
+                </div>
+                <div class="slide"> <img src="assets/img/1.png" class="col-lg-6      col-md-6 slider-image col-sm-6 col-xs-6" id="promo">
+                    <div class="col-lg-6 slider-text col-md-6 col-sm-6 col-xs-6"> СКИДКА&nbsp100%
+                        <br>каждый понедельник
+                        <br>на&nbspпечать еврофлаеров<span class="slider-text-additional">*скидки не суммируются</span></div>
+                </div>
+            </div>
+            <div onclick=nextSlide(2); class=" icon-circle icon-circle-right col-lg-1    col-md-1  col-sm-1  col-xs-1"></div>
+            <div id="dots" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="slider-dot active-dot"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+            </div>
+        </div>
+        <script src="assets/js/slider.js"></script>
+        <!-- SLIDER -->
+    </div>
+    <!-- HEADER CONTAINER -->
+    <div class="container-fluid
+
+     content">
+        <div class="row most-popular">
+            <div onClick='location.href="good-page.html"' class="good-wrapper col-lg-4 col-sm-6 col-md-4 col-xs-12 ">
+                <div class="good">
+                    <h2 class="col-lg-12 good-name">Визитки </h2>
+                    <div class="col-lg-12 sprite-wrapper">
+                        <div class=" sprite-tovar sprite-Vizitki"> </div>
+                    </div>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">Тираж</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-lg-offset-0 col-sm-offset-0">Цена</span>
+                    <div class="line col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-sm-offset-0"></div>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">  100&nbspшт </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0">  550&nbspгрн </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5"> 1000&nbspшт</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0"> 1650&nbspгрн</span>
+                </div>
+            </div>
+            <div class="good-wrapper col-lg-4 col-sm-6 col-md-4 col-xs-12 ">
+                <div class="good">
+                    <h2 class="col-lg-12 good-name">Флаеры</h2>
+                    <div class="col-lg-12 sprite-wrapper">
+                        <div class=" sprite-tovar sprite-Flaeri"> </div>
+                    </div>
+                  <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">Тираж</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-lg-offset-0 col-sm-offset-0">Цена</span>
+                    <div class="line col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-sm-offset-0"></div>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">  100&nbspшт </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0">  550&nbspгрн </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5"> 1000&nbspшт</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0"> 1650&nbspгрн</span>
+                </div>
+            </div>
+            <div class="good-wrapper col-lg-4 col-sm-6 col-md-4 col-xs-12 ">
+                <div class="good">
+                    <h2 class="col-lg-12 good-name">Листовки</h2>
+                    <div class="col-lg-12 sprite-wrapper">
+                        <div class=" sprite-tovar sprite-Listovki"> </div>
+                    </div>
+                   <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">Тираж</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-lg-offset-0 col-sm-offset-0">Цена</span>
+                    <div class="line col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-sm-offset-0"></div>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">  100&nbspшт </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0">  550&nbspгрн </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5"> 1000&nbspшт</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0"> 1650&nbspгрн</span>
+                </div>
+            </div>
+            <div class="good-wrapper col-lg-4 col-sm-6 col-md-4 col-xs-12 ">
+                <div class="good">
+                    <h2 class="col-lg-12 good-name">Буклеты</h2>
+                    <div class="col-lg-12 sprite-wrapper">
+                        <div class=" sprite-tovar sprite-Bukleti"> </div>
+                    </div>
+                   <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">Тираж</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-lg-offset-0 col-sm-offset-0">Цена</span>
+                    <div class="line col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-sm-offset-0"></div>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">  100&nbspшт </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0">  550&nbspгрн </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5"> 1000&nbspшт</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0"> 1650&nbspгрн</span>
+                </div>
+            </div>
+            <div class="good-wrapper col-lg-4 col-sm-6 col-md-4 col-xs-12 ">
+                <div class="good">
+                    <h2 class="col-lg-12 good-name">Брошюры</h2>
+                    <div class="col-lg-12 sprite-wrapper">
+                        <div class=" sprite-tovar sprite-Broshuri"> </div>
+                    </div>
+                  <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">Тираж</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-lg-offset-0 col-sm-offset-0">Цена</span>
+                    <div class="line col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-sm-offset-0"></div>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">  100&nbspшт </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0">  550&nbspгрн </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5"> 1000&nbspшт</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0"> 1650&nbspгрн</span>
+                </div>
+            </div>
+            <div class="good-wrapper col-lg-4 col-sm-6 col-md-4 col-xs-12 ">
+                <div class="good">
+                    <h2 class="col-lg-12 good-name">Плакаты</h2>
+                    <div class="col-lg-12 sprite-wrapper">
+                        <div class=" sprite-tovar sprite-Plakati"> </div>
+                    </div>
+                   <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">Тираж</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-lg-offset-0 col-sm-offset-0">Цена</span>
+                    <div class="line col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-sm-offset-0"></div>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">  100&nbspшт </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0">  550&nbspгрн </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5"> 1000&nbspшт</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0"> 1650&nbspгрн</span>
+                </div>
+            </div>
+            <div class="good-wrapper col-lg-4 col-sm-6 col-md-4 col-xs-12 ">
+                <div class="good">
+                    <h2 class="col-lg-12 good-name">Конверты</h2>
+                    <div class="col-lg-12 sprite-wrapper">
+                        <div class=" sprite-tovar sprite-Konverti"> </div>
+                    </div>
+                   <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">Тираж</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-lg-offset-0 col-sm-offset-0">Цена</span>
+                    <div class="line col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-sm-offset-0"></div>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">  100&nbspшт </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0">  550&nbspгрн </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5"> 1000&nbspшт</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0"> 1650&nbspгрн</span>
+                </div>
+            </div>
+            <div class="good-wrapper col-lg-4 col-sm-6 col-md-4 col-xs-12 ">
+                <div class="good">
+                    <h2 class="col-lg-12 good-name">Блокноты</h2>
+                    <div class="col-lg-12 sprite-wrapper">
+                        <div class=" sprite-tovar sprite-Bloknoti"> </div>
+                    </div>
+                   <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">Тираж</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-lg-offset-0 col-sm-offset-0">Цена</span>
+                    <div class="line col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-sm-offset-0"></div>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">  100&nbspшт </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0">  550&nbspгрн </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5"> 1000&nbspшт</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0"> 1650&nbspгрн</span>
+                </div>
+            </div>
+            <div class="good-wrapper col-lg-4  col-lg-offset-0 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 col-xs-12 col-xs-offset-0">
+                <div class="good">
+                    <h2 class="col-lg-12 good-name">Фирменные&nbspбланки</h2>
+                    <div class="col-lg-12 sprite-wrapper">
+                        <div class=" sprite-tovar sprite-Blanki"> </div>
+                    </div>
+                   <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">Тираж</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-lg-offset-0 col-sm-offset-0">Цена</span>
+                    <div class="line col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 col-sm-offset-0"></div>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5">  100&nbspшт </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0">  550&nbspгрн </span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5"> 1000&nbspшт</span>
+                    <span class="col-lg-6 price col-md-6 col-sm-6 col-xs-5 col-xs-offset-2 col-lg-offset-0 col-sm-offset-0"> 1650&nbspгрн</span>
+                </div>
+            </div>
+        </div>
+        <!--Most POPULAR CONTAINER-->
+        <div class="row work-process">
+            <h2 class="title col-lg-12 col-md-12">Как мы работаем: </h2>
+            <div class="work-stage col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="sprite-wrapper-2 col-lg-12 col-md-12">
+                    <div class="sprite sprite-noun_729731_cc-1"></div>
+                </div>
+                <div class="stage-title col-lg-12 col-md-12">ЗВОНОК</div>
+                <div class="info col-lg-12 col-md-12">Позвоните по телефону
+                    <br>(093)&nbsp111&nbsp22&nbsp23 или напишите
+                    <br> нам на example@example.com</div>
+            </div>
+            <div class="work-stage col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="sprite-wrapper-2 col-lg-12 col-md-12">
+                    <div class="sprite sprite-noun_185636_cc-1"></div>
+                </div>
+                <div class="stage-title col-lg-12 col-md-12">ТЗ</div>
+                <div class="info col-lg-12 col-md-12">Составляем
+                    <br>техническое задание</div>
+            </div>
+            <div class="work-stage col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="sprite-wrapper-2 col-lg-12 col-md-12">
+                    <div class="sprite sprite-noun_248434_cc-1"></div>
+                </div>
+                <div class="stage-title col-lg-12 col-md-12">МАКЕТ</div>
+                <div class="info col-lg-12 col-md-12">Проверяем ваш макет
+                    <br>или разрабатываем новый</div>
+            </div>
+            <div class="work-stage col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="sprite-wrapper-2 col-lg-12 col-md-12">
+                    <div class="sprite sprite-noun_70890_cc-1"></div>
+                </div>
+                <div class="stage-title col-lg-12 col-md-12">ПРЕДОПЛАТА</div>
+                <div class="info col-lg-12 col-md-12">Любым
+                    <br>удобным для вас способом</div>
+            </div>
+            <div class="work-stage col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="sprite-wrapper-2 col-lg-12 col-md-12">
+                    <div class="sprite sprite-noun_39451_cc-1"></div>
+                </div>
+                <div class="stage-title col-lg-12 col-md-12">ПЕЧАТЬ</div>
+                <div class="info col-lg-12 col-md-12">Изготовление вашего
+                    <br>заказа в кратчайшие сроки</div>
+            </div>
+            <div class="work-stage col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="sprite-wrapper-2 col-lg-12 col-md-12">
+                    <div class="sprite  sprite-noun_357446_cc-1"></div>
+                </div>
+                <div class="stage-title col-lg-12 col-md-12">ДОСТАВКА</div>
+                <div class="info col-lg-12 col-md-12">Ваш заказ готов! Заберите его
+                    <br>из нашего офиса или закажите
+                    <br> доставку в любую точку мира</div>
+            </div>
+        </div>
+    </div>
+    <!--CONTAINER CONTENT-->
+    <div class="container-fluid">
+        <div class="row footer">
+            <div class="col-lg-3 col-lg-3 col-md-3 contact-wrapper col-sm-6">
+                <span class="info-title">Контакты</span>
+                <a href="#" class="info-button-footer">(095)&nbsp423&nbsp23&nbsp21</a>
+                <a href="#" class="info-button-footer">(063)&nbsp423&nbsp23&nbsp21</a>
+                <a href="#" class="info-button-footer">(075)&nbsp423&nbsp23&nbsp21</a>
+                <a href="#" class="info-button-footer">example@example.com</a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-md-3 contact-wrapper col-sm-6">
+                <span class="info-title">Услуги</span>
+                <a href="#" class="info-button-footer">Полиграфия</a>
+                <a href="#" class="info-button-footer">Широкоформатная печать</a>
+                <a href="#" class="info-button-footer">Сувенирная продукция</a>
+                <a href="#" class="info-button-footer">Свадебная продукция</a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-md-3 contact-wrapper col-sm-6">
+                <span class="info-title">Информация для клиентов</span>
+                <a href="#" class="info-button-footer">Оплата</a>
+                <a href="#" class="info-button-footer">Доставка</a>
+                <a href="#" class="info-button-footer">Требования к макету</a>
+            </div>
+            <div class="col-lg-3 col-lg-3 col-md-3 contact-wrapper col-sm-6">
+                <span class="info-title">Мы в соцсетях</span>
+                <div class="social-wrapper">
+                    <span class="social-icon icon-vk"></span>
+                </div>
+                <div class="social-wrapper">
+                    <span class="social-icon icon-facebook"></span></div>
+                <div class="social-wrapper">
+                    <span class="social-icon icon-instagram"></span></div>
+            </div>
+            <a href="#   " class="info-button-footer col-lg-4 col-md-4 col-sm-12 col-xs-12 copyright">&copy2016, Типография А4, Все права защищены</a>
+            <a href="#" class="info-button-footer col-lg-4 col-md-4 col-sm-12 col-xs-12 developer">Developed by Gleb Riabtsev</a>
+            <a href="#" class="info-button-footer col-lg-4 col-md-4 col-sm-12 col-xs-12 designer">Designed by Viktoria Gavrikova</a>
+        </div>
+    </div>
+    <!-- jQuery for older IE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/j.info-button*3+img.logo+span.brand+div.y/1.11.3/jquery.min.js"></script>
+    <!-- Site Sripts -->
+    <script src="assets/js/functions.js"></script>
+</body>
+
+</html>
